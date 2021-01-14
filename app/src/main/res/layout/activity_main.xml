@@ -1,0 +1,336 @@
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Food Cart App"
+            app:logo="@drawable/cart"
+            app:titleTextColor="@android:color/white"
+            android:background="@color/bcenter">
+
+        </androidx.appcompat.widget.Toolbar>
+        <GridLayout
+            android:rowCount="3"
+            android:columnCount="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="12dp"
+                android:layout_gravity="center"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/burger"
+                        android:layout_width="300px"
+                        android:layout_height="300px"/>
+                    <TextView
+                        android:text="New Chicken Burger"
+                        android:layout_gravity="center"
+                        android:textColor="@color/purple_700"
+                        android:textSize="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="₹ 130"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:text="BUY NOW"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:background="@drawable/buttonstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_marginTop="10dp"
+                        android:textSize="10dp"
+                        android:text="ADD TO CART"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:background="@drawable/buttonstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="12dp"
+                android:layout_gravity="center"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/sandwich"
+                        android:layout_width="300px"
+                        android:layout_height="300px"/>
+                    <TextView
+                        android:text="Sandwich"
+                        android:layout_gravity="center"
+                        android:textColor="@color/purple_700"
+                        android:textSize="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="₹ 100"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:text="BUY NOW"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:background="@drawable/buttonstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_marginTop="10dp"
+                        android:text="ADD TO CART"
+                        android:textSize="10dp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:background="@drawable/buttonstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="12dp"
+                android:layout_gravity="center"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/coldcoffee"
+                        android:layout_width="300px"
+                        android:layout_height="300px"/>
+                    <TextView
+                        android:text="Cold Coffee"
+                        android:layout_gravity="center"
+                        android:textColor="@color/purple_700"
+                        android:textSize="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="₹ 140"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:text="BUY NOW"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:background="@drawable/buttonstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:textSize="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="ADD TO CART"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:background="@drawable/buttonstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+            app:cardCornerRadius="12dp"
+            android:layout_gravity="center"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/pepsi"
+                    android:layout_width="300px"
+                    android:layout_height="300px"/>
+                <TextView
+                    android:text="Pepsi"
+                    android:layout_gravity="center"
+                    android:textColor="@color/purple_700"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="₹ 40"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:text="BUY NOW"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginTop="10dp"
+                    android:textSize="10dp"
+                    android:text="ADD TO CART"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="12dp"
+                android:layout_gravity="center"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/noodles"
+                        android:layout_width="300px"
+                        android:layout_height="300px"/>
+                    <TextView
+                        android:text="Chineese Noodlesr"
+                        android:layout_gravity="center"
+                        android:textColor="@color/purple_700"
+                        android:textSize="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="₹ 250"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:text="BUY NOW"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:background="@drawable/buttonstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_marginTop="10dp"
+                        android:text="ADD TO CART"
+                        android:textSize="10dp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:background="@drawable/buttonstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="12dp"
+                android:layout_gravity="center"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/mcdonalds"
+                        android:layout_width="300px"
+                        android:layout_height="300px"/>
+                    <TextView
+                        android:text="McDonald's Burger"
+                        android:layout_gravity="center"
+                        android:textColor="@color/purple_700"
+                        android:textSize="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="₹ 200"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:text="BUY NOW"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:background="@drawable/buttonstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_marginTop="10dp"
+                        android:text="ADD TO CART"
+                        android:textSize="10dp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:background="@drawable/buttonstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+         </GridLayout>
+    </LinearLayout>
+</ScrollView>
